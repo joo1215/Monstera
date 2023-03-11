@@ -1,12 +1,12 @@
 import { Link, Routes, Route } from "react-router-dom";
-import { Page } from "./pages/Home/Page";
+import { LoginPage } from "./pages/LoginPage/Login";
 
 import { useEffect } from "react";
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Page />}></Route>
+        <Route path="/" element={<LoginPage />}></Route>
       </Routes>
     </div>
   );
