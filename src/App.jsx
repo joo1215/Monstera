@@ -1,7 +1,7 @@
-import { Link, Routes, Route } from "react-router-dom";
-import { LoginPage } from "./pages/LoginPage/Login";
+import { Link, Routes, Route } from 'react-router-dom';
+import { LoginPage } from './pages/LoginPage/Login';
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 function App() {
   return (
     <div>
