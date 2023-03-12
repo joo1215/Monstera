@@ -1,8 +1,10 @@
 import { Link, Routes, Route } from "react-router-dom";
 import { LoginPage } from "./pages/LoginPage/Login";
-import React from 'react';
+import React from 'react'
 import { Routes, Route, Link } from "react-router-dom";
 import { useEffect } from "react";
+import LoginPage from "./pages/LoginPage";
+
 
 
 function App() {
@@ -14,36 +16,14 @@ function App() {
         <Link to="/planet_market">식물마켓</Link> | <Link to="/cart">장바구니</Link> |{" "}
       </nav>
       <Routes>
-        <Route path="/" element={<LoginPage />}></Route>
-
+        <Route path="/login" element={<Login />}></Route>
+        {/* <Route path="/sign_up" element={<Sign_up />}></Route>
+        <Route path="/planet_hospital" element={<Planet_hospital />}></Route>
+        <Route path="/Planet_market" element={<Planet_market />}></Route>
+        <Route path="/cart" element={<Cart />}></Route> */}
       </Routes>
     </div>
   );
 }
 
 export default App;
-
-
-
-
-function App() {
-  return (
-    <div className="App">
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link> |{" "}
-        <Link to="/counter">Counter</Link> | <Link to="/input">Input</Link> |{" "}
-        <Link to="/input2">Input2</Link> | <Link to="/list">List</Link> |{" "}
-        <Link to="/login">Login</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/input" element={<Input />} />
-        <Route path="/input2" element={<Input2 />} />
-        <Route path="/list" element={<List />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </div>
-  );
-}
