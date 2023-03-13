@@ -1,3 +1,5 @@
+import { withRouter } from 'storybook-addon-react-router-v6';
+
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -16,3 +18,11 @@ const config = {
   },
 };
 export default config;
+
+export const decorators = [withRouter];
+
+export const parameters = {
+  reactRouter: {
+    routePath: '/',
+  },
+};
