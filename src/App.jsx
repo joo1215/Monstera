@@ -1,9 +1,7 @@
 import { Link, Routes, Route } from 'react-router-dom';
 import { LoginPage } from './pages/LoginPage/Login';
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
@@ -16,7 +14,7 @@ function App() {
         <Link to="/cart">장바구니</Link> |{' '}
       </nav>
       <Routes>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/login" element={<LoginPage />}></Route>
         {/* <Route path="/sign_up" element={<Sign_up />}></Route>
         <Route path="/planet_hospital" element={<Planet_hospital />}></Route>
         <Route path="/Planet_market" element={<Planet_market />}></Route>

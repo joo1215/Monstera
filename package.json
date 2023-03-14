@@ -11,6 +11,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.13",
     "dotenv": "^16.0.3",
     "eslint": "^8.36.0",
     "firebase": "^9.17.2",
