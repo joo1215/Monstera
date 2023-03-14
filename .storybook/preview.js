@@ -1,3 +1,5 @@
+import { withRouter } from 'storybook-addon-react-router-v6';
+
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {

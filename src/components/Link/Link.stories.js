@@ -1,18 +1,14 @@
-import { Link } from "./Link";
+import { Link } from './Link';
 
-// More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {
-  title: "Example/Link",
+  title: 'Example/Link',
   component: Link,
-  tags: ["autodocs"],
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
+  tags: ['autodocs'],
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
 export const HomeLink = {
   args: {
-    label: "홈 페이지로 돌아가기",
+    to: '/',
+    label: '홈 페이지로 돌아가기',
   },
 };
