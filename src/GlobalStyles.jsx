@@ -3,6 +3,19 @@ import reset from 'styled-reset'; // style-reset 패키지
 
 const GlobalStyles = createGlobalStyle` 
     ${reset}
+    .a11y-hidden,
+        legend {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: polygon(0 0, 0 0, 0 0);
+    }
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+    }
     a{
         text-decoration: none;
         color: inherit;
