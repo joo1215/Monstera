@@ -5,14 +5,22 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
+export const Button = ({ option, label, width, onClick }) => {
+  // 옵션이 1일경우 "storybook-button—primary" 옵션이 2일경우 "storybook-button—secondary" 2가 아닐경우에는 "storybook-button—third"
+  const mode =
+    option === 1
+      ? 'storybook-button—primary'
+      : option === 2
+      ? 'storybook-button—secondary'
+      : 'storybook-button—third';
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
+      className={['storybook-button', mode].join(' ')}
+      style={{ width: width }}
+      onClick={() => onClick()}
     >
       {label}
     </button>
@@ -20,31 +28,18 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
-  label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
+  option: PropTypes.number,
+
+  label: PropTypes.string,
+
+  width: PropTypes.number,
+
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  option: 1,
+  label: '로그인',
+  width: 400,
   onClick: undefined,
 };

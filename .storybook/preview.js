@@ -18,8 +18,6 @@ const preview = {
 
 export default preview;
 
-import { withRouter } from 'storybook-addon-react-router-v6';
-
 export const decorators = [withRouter];
 
 export const parameters = {
