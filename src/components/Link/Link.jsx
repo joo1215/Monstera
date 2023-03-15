@@ -10,6 +10,7 @@ Link.propTypes = {
   path: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
 };
+
 Link.defaultProps = {
   path: '/',
   label: '홈 페이지로 돌아가기',
