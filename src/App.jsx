@@ -2,6 +2,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 import { LoginPage } from './pages/LoginPage/Login';
 import React from 'react';
 import { useEffect } from 'react';
+import GlobalStyles from './GlobalStyles';
 
 function App() {
   return (
