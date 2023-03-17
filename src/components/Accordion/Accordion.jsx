@@ -3,30 +3,56 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import './accordion.css';
 
 export const SimpleAccordion = ({
-    defaultExpanded,
-    disabled,
-    onChange,
-    square,
-    expanded
+  title = 'Accordion',
+  contents,
+  defaultExpanded,
+  disabled,
+  onChange,
+  square,
+  expanded,
 }) => {
   return (
-    <div>
-      <Accordion defaultExpanded={defaultExpanded} disabled={disabled ?? false} onChange={onChange} square={square ?? false} expanded={expanded}>
-        <AccordionSummary
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Accordion</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </div>
+    <Accordion
+      defaultExpanded={defaultExpanded}
+      disabled={disabled ?? false}
+      onChange={onChange}
+      square={square ?? false}
+      expanded={expanded}
+      disableGutters={true}
+    >
+      <AccordionSummary
+        className="accordion--summary"
+        aria-controls="panel1a-content"
+        expandIcon={<ExpandMore sx={{ color: 'green' }} />}
+      >
+        <Typography component="div" className="accordion--title">
+          <img
+            src={'/static/images/monstera_icon.svg'}
+            width="28px"
+            height="28px"
+            alt=""
+          />
+          {title}
+        </Typography>
+      </AccordionSummary>
+      <AccordionDetails className="accordion--detail">
+        {contents && contents.map((content) => {
+          return (
+            <div className="accordion--detail--content--wrapper">
+              <Typography className="accordion--detail--title">
+                {content.title}
+              </Typography>
+              <Typography className="accordion--detail--desc">
+                {content.description}
+              </Typography>
+            </div>
+          );
+        })}
+      </AccordionDetails>
+    </Accordion>
   );
-}
+};
