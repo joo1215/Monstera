@@ -3,8 +3,9 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ExpandMore from '@mui/icons-material/ExpandMore';
 import './accordion.css';
+import MonsteraIcon from '../../assets/monstera_icon.svg';
+import DownArrow from '../../assets/down_arrow.svg';
 
 export const SimpleAccordion = ({
   title = 'Accordion',
@@ -27,28 +28,27 @@ export const SimpleAccordion = ({
       <AccordionSummary
         className="accordion--summary"
         aria-controls="panel1a-content"
-        expandIcon={<ExpandMore sx={{ color: 'green' }} />}
+        expandIcon={<img src={DownArrow} alt="Expand" />}
       >
         <Typography component="div" className="accordion--title">
-          <img
-            src={'/static/images/monstera_icon.svg'}
-            width="28px"
-            height="28px"
-            alt=""
-          />
+          <img src={MonsteraIcon} alt="Leaf" />
           {title}
         </Typography>
       </AccordionSummary>
       <AccordionDetails className="accordion--detail">
-        {contents && contents.map((content) => {
+        {contents.map((content) => {
           return (
             <div className="accordion--detail--content--wrapper">
               <Typography className="accordion--detail--title">
                 {content.title}
               </Typography>
-              <Typography className="accordion--detail--desc">
-                {content.description}
-              </Typography>
+              {content.description.map((desc) => {
+                return (
+                  <Typography className="accordion--detail--desc">
+                    {desc}
+                  </Typography>
+                );
+              })}
             </div>
           );
         })}
