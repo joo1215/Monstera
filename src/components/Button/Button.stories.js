@@ -60,7 +60,7 @@ export const PurchaseButton = {
 
 export const RegisterCompletedButton = {
   args: {
-    option: 1,
+    option: 2,
     label: '가입 완료',
     width: 400,
   },

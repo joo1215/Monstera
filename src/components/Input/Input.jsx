@@ -52,8 +52,8 @@ Input.defaultProps = {
   id: 'idInput',
   option: true,
   label: '아이디',
-  width: 285,
-  height: 48,
+  width: 257,
+  height: 40,
   placeholder: '아이디를 입력하세요',
   islabel: true,
 };

@@ -1,0 +1,24 @@
+.fieldset_login_form .divider {
+  color: #3eac62;
+  margin: 0px 7px;
+  font-weight: 600;
+}
+
+.fieldset_login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+}
+
+.fieldset_login_form div:nth-child(2),
+.fieldset_login_form div:nth-child(3),
+.fieldset_login_form .storybook-button—primary,
+.fieldset_login_form .link_container {
+  margin-bottom: 17px;
+}
+
+.fieldset_login_form div:nth-child(2),
+.fieldset_login_form div:nth-child(3) {
+  width: 400px;
+}

@@ -7,26 +7,33 @@ export const Checkbox = ({ id, label, width, onClick }) => {
   const [isToggle, setIsToggle] = useState(false);
 
   return (
-    <label className="storybook-input-container" htmlFor={id}>
+    <label className="storybook-input-checkbox-container" htmlFor={id}>
       <CheckIcon
-        className={['storybook-input-checkicon', isToggle && 'isActive'].join(
-          ' ',
-        )}
+        className={[
+          'storybook-input-checkbox-checkicon',
+          isToggle && 'isActive',
+        ].join(' ')}
       />
       <input
         type="checkbox"
         id={id}
         name={id}
-        className="storybook-input"
+        className="storybook-input-checkbox"
         style={{ width: width }}
         onClick={() => {
           onClick();
 
           setIsToggle(!isToggle);
-          console.log(isToggle);
         }}
       />
-      <span className="storybook-input-span">{label}</span>
+      <span
+        className={[
+          'storybook-input-checkbox-span',
+          isToggle && 'isActive',
+        ].join(' ')}
+      >
+        {label}
+      </span>
     </label>
   );
 };
@@ -42,5 +49,5 @@ Checkbox.defaultProps = {
   id: 'allAgreed',
   label: '전체동의',
   width: null,
-  onClick: undefined,
+  onClick: function () {},
 };
