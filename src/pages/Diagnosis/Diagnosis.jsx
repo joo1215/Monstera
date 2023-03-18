@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React from "react";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import './accordion.css';
+import './diagnosis.css';
 import MonsteraIcon from '../../assets/images/monstera_icon.svg';
 import DownArrow from '../../assets/images/down_arrow.svg';
 
