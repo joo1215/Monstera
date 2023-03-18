@@ -1,20 +1,20 @@
-.storybook-input-container {
+.storybook-input-checkbox-container {
   position: relative;
 }
 
-.storybook-input {
+.storybook-input-checkbox {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 1px solid #999;
+  border: 1px solid rgba(196, 196, 196, 1);
   appearance: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
 }
 
-.storybook-input-checkicon {
-  color: #9d9ea2;
+.storybook-input-checkbox-checkicon {
+  color: rgba(196, 196, 196, 1);
   width: 5px;
   position: absolute;
 }
@@ -24,11 +24,13 @@ input[type='checkbox']:checked {
   border-width: 2px;
 }
 
-.storybook-input-span {
+.storybook-input-checkbox-span {
   position: absolute;
   position: relative;
   left: 10px;
   top: -6px;
+  color: rgba(196, 196, 196, 1);
+  font-size: 14px;
 }
 
 .isActive {

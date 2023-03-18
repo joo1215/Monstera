@@ -1,0 +1,11 @@
+.storybook-viewterms {
+  border: 0;
+  background: initial;
+  color: #3eac62;
+  position: relative;
+}
+
+.storybook-viewterms svg {
+  position: relative;
+  top: 7px;
+}

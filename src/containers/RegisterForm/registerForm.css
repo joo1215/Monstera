@@ -1,0 +1,58 @@
+.fieldset_register_form .divider {
+  color: #3eac62;
+  margin: 0px 7px;
+  font-weight: 600;
+}
+
+.fieldset_register_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+}
+
+.fieldset_register_form div:nth-child(2),
+.fieldset_register_form div:nth-child(3),
+.fieldset_register_form div:nth-child(4),
+.fieldset_register_form div:nth-child(5),
+.fieldset_register_form div:nth-child(6),
+.fieldset_register_form div:nth-child(7),
+.fieldset_register_form div:nth-child(8),
+.fieldset_register_form .viewTerms_container {
+  width: 100%;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+}
+.fieldset_register_form div:nth-child(2),
+.fieldset_register_form div:nth-child(3),
+.fieldset_register_form div:nth-child(4),
+.fieldset_register_form div:nth-child(5),
+.fieldset_register_form div:nth-child(6),
+.fieldset_register_form div:nth-child(7),
+.fieldset_register_form div:nth-child(8) {
+  width: 550px;
+  justify-content: flex-start;
+}
+
+.fieldset_register_form .storybook-button—primary {
+  margin-bottom: 17px;
+}
+.fieldset_register_form .viewTerms_container {
+  flex-direction: column;
+  list-style: none;
+  width: 285px;
+}
+.id_container {
+  display: flex;
+}
+
+.id_container button {
+  margin-left: 17px;
+}
+
+.viewTerms_container li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
