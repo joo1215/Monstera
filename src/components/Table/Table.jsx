@@ -13,7 +13,7 @@ function createData(code, origin, species, height) {
 
 const rows = [createData('DH3452', '인도네시아', '관엽식물', 'H90~120')];
 
-export const ProductDetail = ({ ariaLabel }) => {
+export const TableC = ({ ariaLabel }) => {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 400 }} aria-label={ariaLabel}>

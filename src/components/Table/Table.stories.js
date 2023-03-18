@@ -1,8 +1,8 @@
-import { ProductDetail } from './Table';
+import { TableC } from './Table';
 
 export default {
   title: 'Example/Table',
-  component: ProductDetail,
+  component: TableC,
   tags: ['autodocs'],
 };
 
