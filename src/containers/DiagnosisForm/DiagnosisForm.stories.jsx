@@ -1,9 +1,9 @@
 import React from 'react';
-import { SimpleAccordion } from './Diagnosis';
+import { SimpleAccordion } from './DiagnosisForm';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {
-  title: 'Page/Diagnosis',
+  title: 'Container/DiagnosisForm',
   component: SimpleAccordion,
   tags: ['autodocs'],
 };
