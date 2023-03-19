@@ -16,7 +16,11 @@ export const Header = () => {
       </div>
       <div className="search_form_background">
         <div className="search_form">
-          <Logo />
+          <h1 className="Logo">
+            <a href="/">
+              <Logo alt="monstera" />
+            </a>
+          </h1>
           <div class="search_bar">
             <Input
               type="search"
@@ -38,7 +42,9 @@ export const Header = () => {
             <span class="gap">|</span>
             <Link label="식물병원" />
             <span class="gap">|</span>
-            <Link label="{장바구니}" />
+            <a class="cart_icon" href="">
+              <img src={cart_icon} alt="장바구니" />
+            </a>
           </div>
         </div>
       </div>
