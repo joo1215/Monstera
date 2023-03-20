@@ -1,5 +1,5 @@
 .MuiAccordion-root {
-    outline: 1px solid #3EAC62;
+    outline: 1px solid  #EAF8ED;
 }
 
 .MuiAccordionSummary-content div {
@@ -11,7 +11,7 @@
     font-weight: 600;
     line-height: 110%;
     letter-spacing: -1px;
-}
+  }
 
 .Mui-expanded + .Mui-expanded {
     min-height: unset;
@@ -30,10 +30,12 @@
 
 .MuiAccordionDetails-root {
     background-color: #EAF8ED;
+    width: 704px;
+    padding: 16px 18px 16px 18px;
 }
 
 .accordion--detail--content--wrapper:not(:first-of-type) {
-    margin-top: 30px;
+    margin-top: 32px;
 }
 
 .MuiAccordionDetails-root .accordion--detail--title {
@@ -43,7 +45,7 @@
     letter-spacing: -1px;
     color: #3EAC62;
     font-size: 20px;
-    margin: 16px 18px;
+
 }
 
 .MuiAccordionDetails-root .accordion--detail--desc {
@@ -53,7 +55,6 @@
     letter-spacing: -1px;
     color: #333333;
     font-size: 16px;
-    margin: 16px 18px;
-}
+    margin-top : 12px;
 
-/* d */
+}
