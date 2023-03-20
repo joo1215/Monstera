@@ -1,0 +1,42 @@
+.product-description_headline {
+  color: #3eac62;
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+
+.product-description_content {
+  background-color: #eaf8ed;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.product-description_content p {
+  color: #3eac62;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 12px;
+}
+
+.product-description_content li {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.product-description_section-check {
+  padding-bottom: 12px;
+}
+
+.product-description_section-check li::before {
+  content: '- ';
+}
+
+.product-description_section-result li::before {
+  content: '* ';
+  font-weight: 700;
+}
