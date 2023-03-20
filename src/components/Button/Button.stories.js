@@ -57,3 +57,19 @@ export const PurchaseButton = {
     width: 310,
   },
 };
+
+export const RegisterCompletedButton = {
+  args: {
+    option: 2,
+    label: '가입 완료',
+    width: 400,
+  },
+};
+
+export const RegisterUncompletedButton = {
+  args: {
+    option: 2,
+    label: '가입 취소',
+    width: 400,
+  },
+};

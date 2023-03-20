@@ -3,7 +3,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import { LoginPage } from './Login';
 
 export default {
-  title: 'Example/Page',
+  title: 'Page/LoginPage',
   component: LoginPage,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/7.0/react/configure/story-layout
@@ -11,5 +11,4 @@ export default {
   },
 };
 // More on interaction testing: https://storybook.js.org/docs/7.0/react/writing-tests/interaction-testing
-export const LoginPageTest = {};
-
+export const LoginPageTemplate = {};

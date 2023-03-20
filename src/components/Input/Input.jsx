@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './input.css';
 
-/**
- * Primary UI component for user interaction
- * input중에서도 아래의 type만 가능
- * email, number, password, search, tel, text, url
- */
-
 export const Input = ({
   type,
   id,
@@ -58,8 +52,8 @@ Input.defaultProps = {
   id: 'idInput',
   option: true,
   label: '아이디',
-  width: 285,
-  height: 48,
+  width: 257,
+  height: 40,
   placeholder: '아이디를 입력하세요',
   islabel: true,
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './image.css';
-import logo from '../../assets/monstera.svg';
+import logo from '../../assets/images/LOGO.svg';
 
 /**
  * Primary UI component for user interaction

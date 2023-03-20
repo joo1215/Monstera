@@ -1,0 +1,65 @@
+/* Das boots */
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
+:root {
+  font-family: Lexend, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+} */
+/* Das boots */
+.business_info {
+  display: flex;
+  gap: 24px;
+}
+
+.business_info h3 {
+  padding-bottom: 16px;
+  margin: 0;
+  font-family: 'Lexend';
+  font-size: 24px;
+  /* width: 585px; */
+}
+.desc_container > * {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+}
+.info_background {
+  display: flex;
+  font-family: 'Lexend';
+  justify-content: center;
+  background: #f2f6f4;
+  padding: 80px 0;
+  gap: 32px;
+  min-width: 1300px;
+}
+
+.info_background .business_icon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.sns_icon {
+  width: 30px;
+  height: 30px;
+  padding-right: 20px;
+}
+.additional_info {
+  padding-top: 16px;
+}
+
+.right_info {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  background: #f9f9f9;
+}
+
+.right_info p {
+  margin: 0;
+  text-align: center;
+  color: #898989;
+  padding-bottom: 7px;
+  font-size: 10px;
+  font-family: 'Lexend';
+}

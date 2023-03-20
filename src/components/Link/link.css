@@ -1,0 +1,21 @@
+.storybook-link—primary {
+  color: rgba(62, 172, 98, 1);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.storybook-link—secondary {
+  display: inline-block;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 8.5px 0;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #3eac62;
+  background: #fff;
+  border: 1px solid #3eac62;
+}
