@@ -1,0 +1,36 @@
+* {
+  font-family: 'Lexend';
+}
+
+.product-table_container {
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.product-table_header-row {
+  background-color: #d6efdd;
+}
+
+.product-table_header-cell {
+  color: #3eac62;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 12px;
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+.product-table_body-row {
+  background-color: #eaf8ed;
+}
+
+.product-table_body-cell {
+  color: #333333;
+  font-weight: 400;
+  font-size: 12px;
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  border-color: #ffffff;
+}
