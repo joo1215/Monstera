@@ -191,6 +191,6 @@ const Fourth = () => {
   );
 };
 
-export const Examples = () => {
+export const DiagnosisFormTemplate = () => {
   return [<First />, <Second />, <Third />, <Fourth />];
 };
