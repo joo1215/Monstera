@@ -1,10 +1,10 @@
 import React from 'react';
-import { SimpleAccordion } from './DiagnosisForm';
+import { DiagnosisForm } from './DiagnosisForm';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {
   title: 'Container/DiagnosisForm',
-  component: SimpleAccordion,
+  component: DiagnosisForm,
   tags: ['autodocs'],
 };
 
@@ -23,7 +23,7 @@ export const Default = () => {
   };
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <SimpleAccordion
+    <DiagnosisForm
       {...args}
       expanded={expanded}
       onChange={() => setExpanded(!expanded)}
@@ -46,7 +46,7 @@ export const Disabled = () => {
   };
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <SimpleAccordion
+    <DiagnosisForm
       {...args}
       expanded={expanded}
       onChange={() => setExpanded(!expanded)}
@@ -76,7 +76,7 @@ const First = () => {
   };
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <SimpleAccordion
+    <DiagnosisForm
       {...args}
       expanded={expanded}
       onChange={() => setExpanded(!expanded)}
@@ -106,7 +106,7 @@ const Second = () => {
   };
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <SimpleAccordion
+    <DiagnosisForm
       {...args}
       expanded={expanded}
       onChange={() => setExpanded(!expanded)}
@@ -144,7 +144,7 @@ const Third = () => {
   };
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <SimpleAccordion
+    <DiagnosisForm
       {...args}
       expanded={expanded}
       onChange={() => setExpanded(!expanded)}
@@ -183,7 +183,7 @@ const Fourth = () => {
   };
   const [expanded, setExpanded] = React.useState(false);
   return (
-    <SimpleAccordion
+    <DiagnosisForm
       {...args}
       expanded={expanded}
       onChange={() => setExpanded(!expanded)}

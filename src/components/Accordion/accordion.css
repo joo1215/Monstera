@@ -30,7 +30,7 @@
 }
 
 .accordion--detail--content--wrapper:not(:first-of-type) {
-    margin-top: 32px;
+    margin-top: 30px;
 }
 
 .MuiAccordionDetails-root .accordion--detail--title {

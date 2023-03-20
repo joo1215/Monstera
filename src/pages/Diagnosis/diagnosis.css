@@ -1,3 +1,16 @@
+h1 {
+  margin-bottom: 83px;
+}
+
+.MuiAccordion-root {
+  width: 736px;
+}
+
+.MuiAccordionDetails-root {
+  padding: 16px 18px !important;
+  width: 704px;
+}
+
 .register_containerss {
     display: flex;
     flex-direction: column;
@@ -5,9 +18,9 @@
     margin-top: 93.5px;
   }
   
-  .register_containerss h1 {
-    color: rgba(62, 172, 98, 1);
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 52.8px;
-  }
+.register_containerss h1 {
+  color: rgba(62, 172, 98, 1);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52.8px;
+}

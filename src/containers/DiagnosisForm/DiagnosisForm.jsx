@@ -7,7 +7,7 @@ import './diagnosisForm.css';
 import MonsteraIcon from '../../assets/images/monstera_icon.svg';
 import DownArrow from '../../assets/images/down_arrow.svg';
 
-export const SimpleAccordion = ({
+export const DiagnosisForm = ({
   title = 'Accordion',
   contents,
   defaultExpanded,

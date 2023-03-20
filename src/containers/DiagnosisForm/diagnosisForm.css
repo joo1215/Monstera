@@ -21,7 +21,6 @@
     border-width: 1px 0px !important; 
     border-style: solid !important;
     border-color: #3EAC62 !important;
-    width: 736px;
     height: 60px;
 }
 
@@ -31,7 +30,7 @@
 
 .MuiAccordionDetails-root {
     background-color: #EAF8ED;
-    width: 736px;
+    width: 704px;
     padding: 16px 18px 16px 18px;
 }
 
