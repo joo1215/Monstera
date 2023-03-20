@@ -1,54 +1,13 @@
-.MuiAccordion-root {
-    outline: 1px solid #3EAC62;
-}
-
-.MuiAccordionSummary-content div {
-    display:flex;
+.register_containerss {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-family: 'Lexend';
-    color: #3EAC62;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -1px;
-}
-
-.Mui-expanded + .Mui-expanded {
-    min-height: unset;
-}
-
-.MuiAccordionSummary-root {
-    outline: 1px solid #3EAC62 !important;
-}
-
-.MuiAccordionSummary-content img {
-    margin-right: 8px;
-}
-
-.MuiAccordionDetails-root {
-    background-color: #EAF8ED;
-}
-
-.accordion--detail--content--wrapper:not(:first-of-type) {
-    margin-top: 32px;
-}
-
-.MuiAccordionDetails-root .accordion--detail--title {
-    font-family: 'Lexend';
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -1px;
-    color: #3EAC62;
-    font-size: 20px;
-    margin: 16px 18px;
-}
-
-.MuiAccordionDetails-root .accordion--detail--desc {
-    font-family: 'Lexend';
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -1px;
-    color: #333333;
-    font-size: 16px;
-    margin: 16px 18px;
-}
+    margin-top: 93.5px;
+  }
+  
+  .register_containerss h1 {
+    color: rgba(62, 172, 98, 1);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52.8px;
+  }
