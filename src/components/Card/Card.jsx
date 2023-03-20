@@ -33,19 +33,34 @@ export const Card = (props) => {
           <span>{props.score}/5</span>
           <span> | </span>
           <span>{props.reviewsNumber}</span>
-          <span>Reviews</span>
+          <span> Reviews</span>
         </div>
         <span className="newItem">{props.newItem}</span>
         <div className="price">
-          <span className="prevPrice">{props.prevPrice}원 /</span>
+          <span className="prevPrice">{props.prevPrice}원 / </span>
           <span className="currentPrice">{props.currentPrice}원</span>
         </div>
-        <Button label={'장바구니'}></Button>
+        <Button option={1} label={'장바구니 담기'} width={130}></Button>
       </div>
     </div>
   );
 };
 
-// Card.propTypes = {
-//   className: PropTypes.string.isRequired,
-// };
+Card.propTypes = {
+  containerWidth: PropTypes.string.isRequired,
+  containerHeight: PropTypes.string.isRequired,
+  componentGap: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  imageWidth: PropTypes.string.isRequired,
+  imageHeight: PropTypes.string.isRequired,
+  contentWidth: PropTypes.string.isRequired,
+  contentHeight: PropTypes.string.isRequired,
+  categoryTitle: PropTypes.string.isRequired,
+  productTitle: PropTypes.string.isRequired,
+  score: PropTypes.number.isRequired,
+  reviewsNumber: PropTypes.number.isRequired,
+  newItem: PropTypes.string.isRequired,
+  prevPrice: PropTypes.number.isRequired,
+  currentPrice: PropTypes.number.isRequired,
+};

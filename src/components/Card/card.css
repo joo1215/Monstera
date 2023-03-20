@@ -2,15 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 276px;
-  height: 489px; */
   background: #ffffff;
-
-  border: 1px solid salmon;
 }
 
 .product__image {
-  border: 1px solid skyblue;
   border-radius: 8px;
 }
 
@@ -19,7 +14,6 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  border: 1px solid greenyellow;
 }
 
 .category__title {
@@ -28,8 +22,6 @@
   line-height: 150%;
   color: #9d9ea2;
   margin-bottom: 8px;
-
-  border: 1px solid salmon;
 }
 
 .product__title {
@@ -38,8 +30,6 @@
   line-height: 150%;
   margin-bottom: 8px;
   vertical-align: middle;
-
-  border: 1px solid pink;
 }
 
 .review {
@@ -47,24 +37,21 @@
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 8px;
-
-  border: 1px solid blue;
 }
 
 .newItem {
+  color: #05422c;
   width: 54px;
   height: 28px;
-  /* background: blue; */
   line-height: 28px;
   background: #f2f6f4;
   margin-bottom: 20px;
   border-radius: 4px;
-
-  border: 1px solid violet;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .price {
-  border: 1px solid royalblue;
   margin-bottom: 20px;
 }
 
@@ -73,7 +60,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  border: 1px solid red;
 }
 
 .currentPrice {
@@ -81,7 +67,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  border: 1px solid orange;
 }
 
 .card__container Button {
