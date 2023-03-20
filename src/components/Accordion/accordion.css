@@ -18,7 +18,10 @@
 }
 
 .MuiAccordionSummary-root {
-    outline: 1px solid #3EAC62 !important;
+    border-width: 1px 0px !important; 
+    border-style: solid !important;
+    border-color: #3EAC62 !important;
+    height: 60px;
 }
 
 .MuiAccordionSummary-content img {
