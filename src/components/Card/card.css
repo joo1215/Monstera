@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .product__image {
@@ -37,6 +37,23 @@
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 8px;
+  vertical-align: middle;
+}
+
+.review:before {
+  background: url('src/assets/images/star.svg') no-repeat 0 0;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  width: 12px;
+  margin: 0 5px 0 0;
+}
+
+.reviews {
+  color: #c8c9cb;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .newItem {
@@ -70,5 +87,9 @@
 }
 
 .card__container Button {
-  width: 150px;
+  width: 130px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
 }

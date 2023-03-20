@@ -33,7 +33,7 @@ export const Card = (props) => {
           <span>{props.score}/5</span>
           <span> | </span>
           <span>{props.reviewsNumber}</span>
-          <span> Reviews</span>
+          <span className="reviews"> Reviews</span>
         </div>
         <span className="newItem">{props.newItem}</span>
         <div className="price">

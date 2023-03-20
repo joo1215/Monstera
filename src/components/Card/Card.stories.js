@@ -14,7 +14,7 @@ export const mainCard = {
     containerHeight: '489px',
     componentGap: '24px',
     // 이미지
-    src: 'src/assets/cardImage.png',
+    src: 'src/assets/images/card_image.png',
     alt: 'test',
     imageWidth: '276px',
     imageHeight: '240px',
