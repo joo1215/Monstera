@@ -2,30 +2,6 @@ import { Link, Routes, Route } from 'react-router-dom';
 import { LoginPage } from './pages/LoginPage/Login';
 import React from 'react';
 import { useEffect } from 'react';
-import GlobalStyles from './GlobalStyles';
-
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset'; // style-reset 패키지
-
-const GlobalStyles = createGlobalStyle` 
-    ${reset}
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-    *{
-        box-sizing: border-box;
-    }
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;
-        background-color: rgba(20, 20, 20, 1);
-        color: white;
-        padding-top: 50px;
-    }
-`;
-
-export default GlobalStyles;
 
 function App() {
   return (
@@ -42,7 +18,7 @@ function App() {
         {/* <Route path="/sign_up" element={<Sign_up />}></Route>
         <Route path="/planet_hospital" element={<Planet_hospital />}></Route>
         <Route path="/Planet_market" element={<Planet_market />}></Route>
-        <Route path="/cart" element={<Cart />}></Route> */}
+      <Route path="/cart" element={<Cart />}></Route> */}
       </Routes>
     </div>
   );
