@@ -28,7 +28,6 @@ const GlobalStyles = createGlobalStyle`
         font-size: 14px;
         background-color: white;
         color: black;
-        padding-top: 50px;
     }
 `;
 
