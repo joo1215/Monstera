@@ -8,5 +8,4 @@ export default {
 
 export const Detail = {
   args: {},
-  ariaLabel: '상품 정보',
 };

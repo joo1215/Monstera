@@ -1,3 +1,8 @@
+.MuiPaper-root {
+  /* border-radius: 20px; */
+  background-color: #333333;
+}
+
 .product-table_container {
   border-radius: 6px;
   background: #ffffff;
